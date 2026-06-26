@@ -1,0 +1,41 @@
+{
+  "name": "ridgeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Parse an EFT (NIST ITL) fingerprint file and lay the demographics and prints onto a printable FD-258 card.",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "fd-258",
+    "fingerprint",
+    "eft",
+    "nist-itl",
+    "wsq",
+    "pdf"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "make:template": "node scripts/make-placeholder-template.mjs",
+    "make:fixture": "node scripts/make-fixture-eft.mjs"
+  },
+  "dependencies": {
+    "@li0ard/wsq": "^0.1.1",
+    "@pdf-lib/upng": "^1.0.1",
+    "next": "^14.2.5",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
+  }
+}
